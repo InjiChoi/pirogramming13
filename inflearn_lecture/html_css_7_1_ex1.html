@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id와 class</title>
+    <style>
+        #header {
+            width: 500px;
+            background-color: #ffd800;
+            border: 1px solid #808080;
+            text-align: center;
+        }
+        #wrap {
+            width: 500px;
+            background-color: #66dbf6;
+            border: 2px solid #808080;
+            overflow: hidden; /*content float left할 때에 */
+            text-align: center;
+        }
+        #content {
+            width: 350px;
+            border: 1px solid red;
+            float:left;
+        }
+        #footer {
+            float:left;
+            text-align: center;
+            clear: both; /*float left 영향 받지 않으려고*/
+            width: 500px;
+            background-color: #ffd800;
+            border: 3px solid black;
+        }
+        .menu1, .menu3 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>HEADER</h1>
+    </div>
+    <div id="wrap">
+        <div id="content">
+            <h1>content</h1>
+            <ul>
+                <li class="menu1">menu1</li>
+                <li class="menu2">menu2</li>
+                <li class="menu3">menu3</li>
+                <li class="menu4">menu4</li>
+            </ul>
+        </div>
+        <div id="side_banner">
+            <h1>banner</h1>
+            <a href="http://www.sba.seoul.kr" target="_blank">
+            <img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png" alt=""></a>
+        </div>
+    </div>
+    <div id="footer">
+        <h1>FOOTER</h1>
+    </div>
+</body>
+</html>
