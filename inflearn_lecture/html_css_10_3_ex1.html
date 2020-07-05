@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display, Visibility, and opacity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        div:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            visibility: hidden;/*자리는 보존*/
+            background-color: yellow;
+        }
+        div:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            opacity: 0.1; /*투명도 조절(크기 작을수록 투명)*/
+            background-color: blue;
+        }
+        div:nth-child(5) {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+            display: inline;
+            margin: 10px 10px 10px 10px;/*상하 margin 의미 x*/
+        }
+        div:nth-child(6) {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(77, 67, 87);
+            display: inline;
+        }
+        div:nth-child(7) {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(27, 17, 37);
+            display: none;
+        }
+        div:nth-child(8) {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(184, 169, 199);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>content1</div>
+    <div>content2</div>
+    <div>content3</div>
+    <div>content4</div>
+    <div>content5</div>
+    <div>content6</div>
+    <div>content7</div>
+    <div>content8</div>
+</body>
+</html>
