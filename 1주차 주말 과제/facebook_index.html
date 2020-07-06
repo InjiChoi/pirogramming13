@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook - 로그인 또는 가입</title>
+</head>
+<body>
+    <div id="header">
+        <div id="wrap_header">
+            <div id="header_logo">
+                <a href="#" title="Facebook 홈으로 이동"><img src="img/logo.PNG" alt="facebook"></a>
+            </div>
+            <div id="header_login">
+                <div id="wrap_input">
+                    <div id="input_1">
+                        <label for="login_email">이메일 또는 휴대폰</label> <br>
+                        <input type="text" id="login_email">
+                    </div>
+                    <div id="input_2">
+                        <label for="login_pw">비밀번호</label> <br>
+                        <input type="password" id="login_pw">
+                    </div>
+                    <div id="login_btn">
+                    <button><span>로그인</span></button>
+                    </div>
+                </div>
+                <p><a href="#">계정을 잊으셨나요?</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="contents">
+        <div id="wrap_contents">
+            <div id="left_content">
+                <h2>Facebook에서 전세계에 있는 친구, 가족, 지인들과 함께 이야기를 나눠보세요.</h2>
+                <img src="img/img_01.PNG" alt="image">
+            </div>
+            <div id="right_content">
+                <div id="user_info">
+                    <h1>가입하기</h1>
+                    <p>빠르고 쉽습니다.</p>
+                    <div id="signup_name">
+                        <input type="text" id="lastname" value="성(姓)">
+                        <input type="text" id="firstname" value="이름(성은 제외)">
+                    </div>
+                    <div id="signup_phone">
+                        <input type="text" id="phone" value="휴대폰 번호 또는 이메일">
+                    </div>
+                    <div id="signup_pw">
+                        <input type="password" id="password" value="새 비밀번호">
+                    </div>
+                </div>
+                <div id="user_birth">
+                    <p>생일</p>
+                    <div class="b_year">
+                        <select name="year" id="year" title="연도">
+                        <option value="1995" selected="selected">1995</option>
+                        </select>
+                    </div>
+                    <div class="b_month">
+                        <select name="month" id="month" title="월">
+                            <option value="7" selected="selected">7월</option>
+                        </select>
+                    </div>
+                    <div class="b_date">
+                        <select name="date" id="date" title="일">
+                            <option value="6" selected="selected">6</option>
+                        </select>
+                    </div>
+                    <img src="img/question.PNG" alt="">
+                </div>
+                <div id="user_gender">
+                    <p>성별</p>
+                    <input type="radio" name="gender" id="female"> 
+                    <label for="female">여성</label>
+                    <input type="radio" name="gender" id="male"> 
+                    <label for="male">남성</label>
+                    <input type="radio" name="gender" id="other"> 
+                    <label for="other">직접 지정</label>
+                    <img src="img/question.PNG" alt="">
+                </div>
+                <div id="etc">
+                    <p>가입하기 버튼을 클릭하면 Facebook의 <a href="#">약관</a>, <a href="#">데이터 정책</a> 및 <a href="#">쿠키 정책</a>에 동의하게 됩니다. Facebook으로부터 SMS 알림을 받을 수 있으며 알림은 언제든지 옵트 아웃할 수 있습니다.</p>
+                    <button class="signup_btn">가입하기</button>
+                    <p>유명인, 밴드, 비즈니스를 위한 <a href="#">페이지 만들기</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="wrap_footer">
+            <div id="lang">
+                <ul>
+                    <li><p>한국어</p></li>
+                    <li><a href="#" title="English (US)">English (US)</a></li>
+                    <li><a href="#" title="Vietnamese">Tiếng Việt</a></li>
+                    <li><a href="#" title="Indonesian">Bahasa Indonesia</a></li>
+                    <li><a href="#" title="Thai">ภาษาไทย</a></li>
+                    <li><a href="#" title="Spanish">Español</a></li>
+                    <li><a href="#" title="Simplified Chinese (China)">中文(简体)</a></li>
+                    <li><a href="#" title="Japanese">日本語</a></li>
+                    <li><a href="#" title="Portuguese (Brazil)">Português (Brasil)</a></li>
+                    <li><a href="#" title="French (France)">Français (France)</a></li>
+                    <li><a href="#" title="German">Deutsch</a></li>
+                    <li><button>+</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

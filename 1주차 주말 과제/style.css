@@ -1,0 +1,136 @@
+/*initial setting*/
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+/*header*/
+#header {
+    overflow: hidden;
+    width: 100%; height: 80px;
+    background-color: #3f5c9a;
+}
+#header #wrap_header {
+    width: 1000px; height: inherit;
+    margin: 0 auto;
+}
+#header #header_logo {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
+#header #header_login {
+    float: right;
+    padding-top: 15px;
+}
+#header_login #wrap_input {
+    overflow: hidden;
+}
+#wrap_input div {float: left; margin-right: 15px;}
+#wrap_input div label {font-size: 0.7em; color: #ffffff;}
+#wrap_input div:last-child button {color:#ffffff; margin-top: 23px; border: 1px solid #31446e; background-color: #4966a5;}
+#header_login a{font-size: 0.7em; color: lightslategray; margin-left: 185px;}
+
+/*content*/
+#contents{
+    width: 100%;
+    height: 600px;
+    /*gradeient 추가*/
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+1,d7dbea+73,d7dbea+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 1%, #d7dbea 73%, #d7dbea 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 1%,#d7dbea 73%,#d7dbea 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 1%,#d7dbea 73%,#d7dbea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7dbea',GradientType=0 ); /* IE6-9 */
+}
+#contents #wrap_contents {
+    overflow: hidden;
+    width: 1000px; height: 600px;
+    margin: 0 auto;
+}
+/*left content*/
+#contents #left_content {
+    padding-top: 30px;
+    float: left;
+    width: 480px;
+
+}
+#left_content img {
+    width: 100%; height: inherit;
+}
+#left_content h2 {
+    color: rgb(13, 46, 77);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*right content*/
+#contents #right_content {
+    padding-top: 15px;
+    float: left;
+    width: 460px;
+    padding-left: 60px;
+}
+#user_info input {
+    font-size: 1.05em;
+    padding: 7px 5px; 
+    box-sizing: border-box;
+    border-color: rgb(207, 207, 207);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#right_content #user_info > p {font-size: 1.2em;}
+#right_content #user_info #signup_name {overflow: hidden; margin-top: 10px;}
+#signup_name #lastname {float: left; margin-right: 10px;}
+#signup_name #firstname {float: left;}
+#signup_phone input {width: 433px;}
+#signup_pw input {width: 433px;}
+
+#right_content #user_birth {overflow: hidden;}
+#right_content #user_birth p {color: grey;}
+#user_birth div {float: left; margin-top: 5px;}
+#user_birth select {
+    margin-right: 3px;
+    width: 60px; height: 30px;
+}
+
+#right_content #user_gender {margin-top: 10px;}
+#right_content #user_gender p {color: grey;}
+
+#right_content #etc {width: 300px; margin-top: 15px;}
+#right_content #etc p:first-child {font-size: 0.65em; margin-bottom: 20px;}
+#right_content #etc p a {color: rgb(4, 60, 124);}
+
+#right_content #etc .signup_btn {
+    background-color: rgb(76, 146, 76);
+    border: 1px solid rgb(58, 88, 58);
+    border-radius: 5px;
+    width: 180px; height: 40px;
+    font-weight: bold; font-size: 1.2em; color: #ffffff;
+    margin-bottom: 30px;
+}
+
+#right_content #etc p:last-child {font-size: 0.8em; font-weight: bold; color: rgb(61, 61, 61);}
+
+/*footer*/
+#footer {
+    width: 100%; height: 150px;
+    color: #ffffff;
+}
+#footer #wrap_footer {
+    width: 1000px; height: 80px;
+    margin: 0 auto;
+    color: darkgrey;
+    border-bottom: 1px solid darkgray;
+}
+#wrap_footer #lang ul {
+    padding-top: 50px;
+    overflow: hidden;
+}
+#wrap_footer #lang ul li {
+    font-size: 0.75em;
+    float: left;
+    margin-right: 10px;
+}
+#wrap_footer #lang li a {color: rgb(4, 60, 124);}
+#wrap_footer ul li button {width: 30px;}
