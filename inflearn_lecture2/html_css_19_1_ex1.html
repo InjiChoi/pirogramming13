@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Layout3</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        li { list-style: none;}
+        a {text-decoration: none;}
+
+        #header {
+            height: 100;
+            background-color: #ff8c00;
+        }
+        #header #logo_wrap {
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+        }
+        #header #logo_wrap a {
+            display: inline-block;
+        }
+        #header #logo_wrap .menu { color: #ffffff; font-size: 1.5em; font-weight: bold;}
+        #header #logo_wrap .logo {position: absolute; left: 10px;}
+        #header #logo_wrap .myinfo {position: absolute; right: 10px;}
+
+        #header #search {position: relative; overflow: hidden; width: 100%;}
+        #header #search input {float: left; width: 100%; height: 50px; border: 5px solid #ee8f00; box-sizing: border-box; padding: 5px;}
+        #header #search img {float: left; position:absolute; right: 0; }
+
+        #lnb ul {
+            overflow: hidden;
+            margin: 7px 0;
+        }
+        #lnb ul li {
+            width: 16.6%; height: 30px; line-height: 30px;
+            float: left; text-align: center;
+            border-right: 1px solid #cccccc; box-sizing: border-box;
+        }
+        #lnb ul li:last-child {border:0}
+
+        #section #section_content_01 {overflow: hidden;}
+        #section #section_content_01 .row1 div{width: 50%; height: 135px; line-height: 100px; float: left; border: 2px solid #ffffff; box-sizing: border-box;}
+        #section #section_content_01 .row1 div:last-child {float: right;}
+        #section #section_content_01 .row2 div{width: 50%; height: 135px; line-height: 100px; float: left; border: 2px solid #ffffff; box-sizing: border-box;}
+        #section #section_content_01 .row2 div:last-child {float: right;}
+        #section #section_content_01 .row3 div{width: 50%; height: 135px; line-height: 100px; float: left; border: 2px solid #ffffff; box-sizing: border-box;}
+        #section #section_content_01 .row3 div:last-child {float: right;}
+        #section_content_01 img {width: 100%; height: inherit;}
+
+        #section #section_content_02 {overflow: hidden; margin-top: 10px;}
+        /*ellipsis 적용하는 법 외우기*/
+        #section #section_content_02 li {
+            padding: 8px; border-bottom: 1px solid #cccccc; 
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;/*암기*/
+        }
+
+        #section #section_content_03 {margin-top: 10px;}
+        #section #section_content_03 ul li {overflow: hidden; margin: 10px; padding: 10px; border: 1px solid #cccccc; box-sizing: border-box;}
+        #section #section_content_03 .img img{float: left; width: 100px; height: 100px;}/*.img만 하면 왜 width값 적용 안되는지?*/
+        #section #section_content_03 .txt {float: left; width: 400px; height: 100px;}
+        #section_content_03 .txt span {display: block; margin-left: 5px;} /*왜 block으로 할꺼면서 div로 안하는지?*/
+        #section_content_03 .txt span:first-child {font-size: 1.2em; color: blue; font-weight: bold;}
+        #section_content_03 .txt span:last-child {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+    
+        #footer p{text-align: center;}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div id="header_wrap">
+            <div id="logo_wrap">
+                <a href="#" class="logo"><img src="menu.png" alt="menu"></a>
+                <a href="#" class="menu">mobile logo</a>
+                <a href="#" class="myinfo"><img src="myinfo.png" alt="myinfo"></a>
+            </div>
+        </div>
+        <div id="search">
+            <input type="text"/>
+            <a href=""><img src="search_btn.png" alt=""></a>
+        </div>
+    </header>
+
+    <div id="lnb">
+        <ul>
+            <li><a href="">lnb1</a></li>
+            <li><a href="">lnb2</a></li>
+            <li><a href="">lnb3</a></li>
+            <li><a href="">lnb4</a></li>
+            <li><a href="">lnb5</a></li>
+            <li><a href="">lnb6</a></li>
+        </ul>
+    </div>
+
+    <section id="section">
+        <div id="section_content_01">
+            <div class="row1">
+                <div><img src="http://www.sba.seoul.kr/kr/images/index/visual16.jpg" alt=""></div>
+                <div><img src="http://www.sba.seoul.kr/kr/images/index/visual15.jpg" alt=""></div>
+            </div>
+            <div class="row2">
+                <div><img src="http://www.sba.seoul.kr/kr/images/index/visual14.jpg" alt=""></div>
+                <div><img src="http://www.sba.seoul.kr/kr/images/index/visual13.jpg" alt=""></div>
+            </div>
+            <div class="row3">
+                <div><img src="http://www.sba.seoul.kr/kr/images/index/visual12.jpg" alt=""></div>
+                <div><img src="http://www.sba.seoul.kr/kr/images/index/visual11.jpg" alt=""></div>
+            </div>
+        </div>
+        <div id="section_content_02">
+            <ul>
+                <li><a href="">중소기업 지원업무의 전문성과 효율성을 확보하고 중소기업에 대한 기술기술기술기술</a></li>
+                <li><a href="">서울산업진흥원은 서울특별시에 소재하고있는 중소기업에 댛나 종합적 어쩌구ㅇ어쩌구어ㅓ어어어</a></li>
+                <li><a href="">코리아 패션 오사카 2014 추진 업무 정책</a></li>
+                <li><a href="">서울지역 중소기업 육성 및 청년일자리 창출을 위한 어쩌구 협력 저쩌구 등등등</a></li>
+            </ul>
+        </div>
+        <div id="section_content_03">
+            <ul>
+                <li>
+                    <p class="img"><a href=""><img src="visual14.jpg" alt=""></a></p>
+                    <p class="txt"><a href="">
+                        <span>서울산업진흥원</span>
+                        <span>중소기업 지원업무의 전문성과 효율성을 확보하고 어쩌구 저쩌구 솰라솰라</span>
+                    </a></p>
+                </li>
+                <li>
+                    <p class="img"><a href=""><img src="visual14.jpg" alt=""></a></p>
+                    <p class="txt"><a href="">
+                        <span>서울산업진흥원</span>
+                        <span>중소기업 지원업무의 전문성과 효율성을 확보하고 어쩌구 저쩌구 솰라솰라</span>
+                    </a></p>
+                </li>
+                <li>
+                    <p class="img"><a href=""><img src="visual14.jpg" alt=""></a></p>
+                    <p class="txt"><a href="">
+                        <span>서울산업진흥원</span>
+                        <span>중소기업 지원업무의 전문성과 효율성을 확보하고 어쩌구 저쩌구 솰라솰라</span>
+                    </a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="footer">
+        <div id="footer_wrap">
+            <p><img src="http://www.sba.seoul.kr/kr/images/footer/f_logo.png" alt=""></p>
+            <p>121-904 서울 마포구 월드컵북로 400(상암동)</p>
+        </div>
+    </div>
+</body>
+</html>
