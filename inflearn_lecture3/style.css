@@ -1,0 +1,8 @@
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+#wrap #header h1 {background-color: blanchedalmond; text-align: center; height: 200px;}
+#wrap #section {background-color: cadetblue; color: #ffffff; height: 300px;}
+#wrap #footer {background-color: #ffd860; height: 100px; text-align: center;}
