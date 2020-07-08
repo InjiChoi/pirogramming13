@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+        #nav #gnb ul {overflow: hidden;  margin: 0 auto;}
+        #nav #gnb ul li {
+            float: left; 
+            width: 200px; height: 100px;
+            background-color: antiquewhite;
+            margin: 5px;
+            transition-property: height, background-color ; /*왜 적용이 안되지*/
+            transition-duration: 5s, 2s;
+        }
+        #gnb ul li:first-child:hover {
+            height: 250px;
+            background-color: burlywood;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="gnb">
+            <ul>
+                <li>GNB_01</li>
+                <li>GNB_02</li>
+                <li>GNB_03</li>
+                <li>GNB_04</li>
+                <li>GNB_05</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
