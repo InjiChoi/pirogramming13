@@ -1,6 +1,7 @@
-with open('words.txt','r') as file:
+with open('word.txt','r') as file:
     words = file.readlines()
-str = words[0].split()
-for i in range(len(str)):
-    if 'c' in str[i]:
-        print(str[i].strip(',.'))
+for word in words:
+    word = word.strip('\n')
+    if word == word[::-1]:
+        print(word)
+
