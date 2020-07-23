@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{% url 'post:post_c' %}" method="POST" enctype="multipart/form-data">
+        {%  csrf_token %} {# 보안 유지 목적 폼 태그안에 무조건 적기 #}
+        <h2>제목: </h2> <input type="text" name="tit"> {# name 중요! 나중에 view에서 씀 #}
+        <h2>작성자: </h2> <input type="text" name="wri">
+        <h2>내용: </h2> <textarea name="con"></textarea>
+        <button type="submit">작성</button>
+    </form>
+</body>
+</html>

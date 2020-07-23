@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+</head>
+<body>
+    {% for i in posts %}
+        <div>
+            <a href="{% url 'post:post_d' i.pk %}">
+                {{ i.pk }}.{{ i.title }}
+            </a>
+        </div>
+    {% endfor %}
+</body>
+</html>
